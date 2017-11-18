@@ -6,19 +6,15 @@
   display: inline-block;
 
   &--orange {
-    background-color: orange;
+    background-color: $mainOrange;
   }
 
   &--large {
-
-    padding: 1.1rem 2.9rem;
+    padding: 1.1rem 1.9rem;
 
     @mixin atSmall {
       font-size: 1.25rem;
     }
   }
-}
 
-.large-hero__image {
-  display: block;
 }

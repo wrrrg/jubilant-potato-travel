@@ -453,11 +453,10 @@ template {
 body {
   font-family: 'Roboto', sans-serif;
   color: #333;
-  /*background: blue;*/
 }
 
 img {
-  width: 100%;
+  max-width: 100%;
   height: auto;
 }
 
@@ -467,13 +466,12 @@ img {
 }
 
 a {
-  color: orange;
-  text-decoration: none;
+  color: #d59541;
 }
 
 .large-hero {
-    border-bottom: 10px solid #2f5572;
-    position: relative;
+  border-bottom: 10px solid #2f5572;
+  position: relative;
 
 }
 
@@ -489,20 +487,21 @@ a {
     left: 0;
     width: 100%;
     text-align: center;
-
   }
 
 .large-hero__title {
     font-weight: 300;
     color: #2f5572;
-    font-size: 2rem;
     margin: 0;
+    font-size: 2.4rem;
+
   }
 
 @media (min-width: 530px) {
 
 .large-hero__title {
       font-size: 4.8rem
+
   }
   }
 
@@ -511,15 +510,25 @@ a {
     color: #2f5572;
     font-size: 1.5rem;
     margin: 0;
+
+  }
+
+@media (min-width: 530px) {
+
+.large-hero__subtitle {
+      font-size: 2.9rem
+
+  }
   }
 
 .large-hero__description {
     color: #FFF;
     font-size: 1.1rem;
     font-weight: 100;
-    text-shadow: 2px 2px 0 rgba(0,0,0,.1);
+    text-shadow: 2px 2px 0 rgba(0, 0, 0, .1);
     max-width: 30rem;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
   }
 
 @media (min-width: 530px) {
@@ -535,15 +544,15 @@ a {
   text-decoration: none;
   padding: .75rem 1.2rem;
   display: inline-block;
+
 }
 
 .btn--orange {
-    background-color: orange;
+    background-color: #d59541;
   }
 
 .btn--large {
-
-    padding: 1.1rem 2.9rem;
+    padding: 1.1rem 1.9rem;
   }
 
 @media (min-width: 530px) {
@@ -553,17 +562,13 @@ a {
   }
   }
 
-.large-hero__image {
-  display: block;
-}
-
 .wrapper {
+  overflow: hidden;
   padding-left: 18px;
   padding-right: 18px;
   max-width: 1236px;
   margin-left: auto;
   margin-right: auto;
-  overflow: hidden;
 
 }
 
@@ -576,16 +581,19 @@ a {
     padding-right: 0;
   }
 
+.wrapper--b-margin {
+    margin-bottom: 1rem;
+  }
+
 @media (min-width: 530px) {
 
 .wrapper--b-margin {
-    margin-bottom: 3.875rem
+      margin-bottom: 3.875rem
   }
   }
 
 .page-section {
-
-    padding: 1.2rem 0;
+  padding: 1.2rem 0;
 }
 
 @media (min-width: 800px) {
@@ -597,19 +605,19 @@ a {
 
 .page-section--blue {
     background-color: #2f5572;
-    color: white;
+    color: #FFF;
   }
 
-.headline{
-  font-weight: 300;
+.headline {
   font-size: 1.9rem;
+  font-weight: 300;
   color: #2f5572;
 }
 
 @media (min-width: 530px) {
 
-.headline{
-      font-size: 2.875rem
+.headline {
+    font-size: 2.875rem
 }
   }
 
@@ -618,7 +626,7 @@ a {
   }
 
 .headline--orange {
-    color: orange;
+    color: #d59541;
   }
 
 .headline--small {
@@ -627,7 +635,8 @@ a {
 
 @media (min-width: 530px) {
 
-.headline--small {font-size: 1.875rem
+.headline--small {
+      font-size: 1.875rem
   }
   }
 
@@ -639,6 +648,10 @@ a {
 
 .headline--light {
     font-weight: 100;
+  }
+
+.headline strong {
+    font-weight: 400;
   }
 
 .headline--b-margin-small {
@@ -665,47 +678,49 @@ a {
 
 .row--gutters > div {
     padding-right: 65px;
-
   }
 
 .row__b-margin-until-medium {
-    margin-bottom: 1em;
+    margin-bottom: 1rem;
   }
 
 @media (min-width: 800px) {
 
-  .row__b-margin-until-medium {
-    margin-bottom: 0;
-  }
-  .row__medium-4 {
-    float: left;
-    width: 33.33%;
-  }
+    .row__b-margin-until-medium {
+      margin-bottom: 0;
+    }
 
-  .row__medium-4-larger {
-    float: left;
-    width: 37%;
-  }
+    .row__medium-4 {
+      float: left;
+      width: 33.33%;
+    }
 
-  .row__medium-8 {
-    float: left;
-    width: 66.66%;
-  }
+    .row__medium-4--larger {
+      width: 37%;
+    }
 
-  .row__medium-8-smaller {
-    float: left;
-    width: 63%;
-  }
+    .row__medium-8 {
+      float: left;
+      width: 66.66%;
+    }
+
+    .row__medium-8--smaller {
+      width: 63%;
+    }
   }
 
 .generic-content-container p {
     line-height: 1.65;
-    font-size: 1.125em;
-    margin: 1rem 0;
+    margin: 1.8rem 0;
+  }
 
+@media (min-width: 530px) {
+
+.generic-content-container p {
+      font-size: 1.125rem
+  }
   }
 
 .generic-content-container p a {
     font-weight: 700;
-    color: orange;
   }
