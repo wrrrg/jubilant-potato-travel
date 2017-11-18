@@ -1,0 +1,24 @@
+.btn {
+  background-color: $mainBlue;
+  color: #FFF;
+  text-decoration: none;
+  padding: .75rem 1.2rem;
+  display: inline-block;
+
+  &--orange {
+    background-color: orange;
+  }
+
+  &--large {
+
+    padding: 1.1rem 2.9rem;
+
+    @mixin atSmall {
+      font-size: 1.25rem;
+    }
+  }
+}
+
+.large-hero__image {
+  display: block;
+}

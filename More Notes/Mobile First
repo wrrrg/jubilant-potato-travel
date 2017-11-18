@@ -1,0 +1,36 @@
+What is Mobile First?
+
+The opposite of Bootstrap basically. We used to build big and move small. Now we start with the mobile size and move larger. This is because way more traffic comes from mobile now. The primary source of traffic should be the main focus of design.
+
+
+Designing for a smaller screen makes us prioritize content, which is good.
+
+Development - code so unnecessary data isn't downloaded. Make the site load quickly.
+
+Distinction between Design and Development is important.
+
+No reason to not make websites mobile first.
+
+
+Responsive Images: two reasons:
+    1) data usage on Mobile
+    2) art direct/cropping problems
+
+    We make small med and large versions of the image. Identical for the data usage situation, different for the cropping reason.
+
+    we use
+
+            <picture>
+              <source srcset="images/dog-crop-large.jpg" media="(min-width: 1200px)">
+              <source srcset="images/dog-crop-medium" media="(min-width: 760px)">
+              <img src="images/dog-crop-small.jpg"
+            </picture>
+
+    to accomplish this for the art version of this problem.
+
+
+    For DATA versions we use:
+
+      <img srcset="images/do-resolution-small.jpg 570w, images/dog-resolution-medium.jpg 1200w, images/dog-resolution-large.jpg 1920w">
+
+with the 1920w representing the pixel width so the device can figure it out. 

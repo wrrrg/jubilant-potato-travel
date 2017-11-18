@@ -1,0 +1,13 @@
+CSS workflow
+
+Preprocessors - sass, less, stylus. These let us save variables in CSS which we normally can't, or writing nested CSS because browsers don't support it. These processors convert it to regular CSS.
+
+PostCSS is the trendy new one apparently, but it's also the fastest.
+
+Vocab Building
+
+gulp lets us automatically do this.
+
+gulp.src pulls the source, gulp.dest is the destination. IN between we can run a PostCSS filter
+
+Block Element Modifier - way more clear, 1:1 relationship with html and styling 
