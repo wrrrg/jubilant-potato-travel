@@ -1,0 +1,24 @@
+{
+  "name": "jubilant-potato-travel",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wrrrg/jubilant-potato-travel.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wrrrg/jubilant-potato-travel/issues"
+  },
+  "homepage": "https://github.com/wrrrg/jubilant-potato-travel#readme",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.2.1",
+    "normalize.css": "^7.0.0"
+  }
+}
