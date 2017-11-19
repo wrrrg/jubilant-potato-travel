@@ -1061,3 +1061,49 @@ Instead edit gulp/templates/sprite */
   display: block;
   margin: 0 0 1rem 0;
 }
+
+.site-header {
+  padding: 10px 0;
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+  background-color: rgba(47, 85, 114, .5);
+
+}
+
+.site-header__btn-container {
+  float: right;
+}
+
+.site-header__logo {
+  background-color: #2f5572;
+  position: absolute;
+  padding: 25px;
+  top: 0;
+  margin-left: 5%;
+}
+
+.primary-nav--pull-right {
+  float:right;
+}
+
+.primary-nav ul {
+  margin: 0;
+  padding: 12px 0;
+
+  @mixins clearfix;
+}
+
+.primary-nav li {
+  list-style: none;
+  float: left;
+  color: white;
+  padding-right: 20px;
+}
+
+.primary-nav a {
+  padding: 12px 0;
+  color: white;
+  text-decoration: none;
+  font-weight: 300;
+}
