@@ -457,6 +457,14 @@ a {
   left: 0;
   width: 100%;
   text-align: center;
+  padding-top: 88px;
+}
+
+@media (min-width: 800px) {
+
+  .large-hero__text-content {
+    padding-top: 60px;
+  }
 }
 
 .large-hero__title {
@@ -1067,8 +1075,14 @@ Instead edit gulp/templates/sprite */
   position: absolute;
   width: 100%;
   z-index: 2;
-  background-color: rgba(47, 85, 114, .5);
 
+}
+
+@media (min-width: 800px) {
+
+  .site-header {
+    background-color: rgba(47, 85, 114, .5);
+  }
 }
 
 .site-header__btn-container {
@@ -1080,7 +1094,51 @@ Instead edit gulp/templates/sprite */
   position: absolute;
   padding: 25px;
   top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-62%);
+          transform: translateX(-62%);
   margin-left: 5%;
+}
+
+@media (min-width: 800px) {
+
+  .site-header__logo {
+    left: auto;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+.site-header__logo--graphic {
+  text-indent: -9999px;
+}
+
+.site-header__menu-icon {
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+@media (min-width: 800px) {
+
+  .site-header__menu-icon {
+    display: none;
+  }
+}
+
+.site-header__menu-content
+{
+  display: none;
+}
+
+@media (min-width: 800px) {
+
+  .site-header__menu-content {
+    display: block;
+  }
 }
 
 .primary-nav--pull-right {
